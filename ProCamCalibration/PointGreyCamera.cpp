@@ -72,14 +72,17 @@ PointGreyCamera::PointGreyCamera()
 	cout << "<camera> [Set] W/B: " << error.GetDescription() << endl;
 	// Set Exposure
 	prop.type = FlyCapture2::AUTO_EXPOSURE;
-	prop.onOff = true;	prop.autoManualMode = false;
+	prop.onOff = true;
+	prop.autoManualMode = false;
 	prop.absControl = true;
 	prop.absValue = 0.0;
 	error = fle3camera.SetProperty(&prop);
 	cout << "<camera> [Set] Exposure: " << error.GetDescription() << endl;
 	// Set image gamma
 	prop.type = FlyCapture2::GAMMA;
-	prop.onOff = true;	prop.absControl = true;	prop.absValue = 1.1;
+	prop.onOff = true;
+	prop.absControl = true;
+	prop.absValue = 1.1;
 	error = fle3camera.SetProperty(&prop);
 	cout << "<camera> [Set] Gamma: " << error.GetDescription() << endl;
 

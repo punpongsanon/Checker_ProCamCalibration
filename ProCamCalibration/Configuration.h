@@ -59,4 +59,4 @@
 #define CAM_PNP_CALIBRATE_MODE 5
 #define PROGRAM_EXIT 0
 
-#define WEBCAM_MODE
+//#define WEBCAM_MODE
